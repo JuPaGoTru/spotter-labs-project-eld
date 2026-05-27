@@ -1,0 +1,207 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.section {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sectionTitle {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+
+/* Location flow */
+.locationFlow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 12px;
+}
+
+.locItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.locDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.locLine {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  margin-left: 4px;
+}
+
+.locType {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.locName {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Stats row */
+.statsRow {
+  display: flex;
+  gap: 0;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.statItem {
+  flex: 1;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid var(--border);
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statVal {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.statLabel {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Fuel stops */
+.fuelStop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 3px 0;
+}
+
+.fuelIcon {
+  font-size: 13px;
+}
+
+.fuelLabel {
+  font-size: 12px;
+}
+
+/* Day rows */
+.dayRow {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--surface2);
+}
+
+.dayRow:hover {
+  border-color: var(--border-bright);
+}
+
+.dayRowActive {
+  border-color: var(--accent) !important;
+  background: rgba(245, 166, 35, 0.05);
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.dayNum {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dayMiles {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+}
+
+/* Mini timeline */
+.miniTimeline {
+  display: flex;
+  height: 8px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--surface);
+  margin-bottom: 6px;
+  border: 1px solid var(--border);
+}
+
+.miniSegment {
+  height: 100%;
+  min-width: 1px;
+  transition: opacity 0.15s;
+}
+
+.miniSegment:hover {
+  opacity: 0.8;
+}
+
+.dayStats {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.legendColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}

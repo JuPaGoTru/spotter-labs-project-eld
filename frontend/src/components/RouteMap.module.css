@@ -1,0 +1,163 @@
+.container {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.mapHeader {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mapTitle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.mapTitleIcon {
+  color: var(--accent);
+}
+
+.routeStats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statVal {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.statLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statDiv {
+  width: 1px;
+  height: 28px;
+  background: var(--border);
+}
+
+.map {
+  height: 380px;
+  width: 100%;
+}
+
+/* Override leaflet popup */
+:global(.dark-popup .leaflet-popup-content-wrapper) {
+  background: #1e2329;
+  border: 1px solid #3d4d60;
+  color: #e8edf5;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+:global(.dark-popup .leaflet-popup-tip) {
+  background: #1e2329;
+}
+
+.legend {
+  padding: 8px 20px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Route Instructions */
+.instructions {
+  padding: 14px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--surface2);
+}
+
+.instrTitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.instrList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.instrItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.instrDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.instrInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.instrLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.instrMile {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
