@@ -23,7 +23,7 @@ Full-stack app for FMCSA Hours of Service planning. Built with Django + React.
 ### 1. Clone & setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/JuPaGoTru/spotter-labs-project-eld.git
 cd eld-trip-planner
 ```
 
